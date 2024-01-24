@@ -1,0 +1,41 @@
+parameters:
+    typeAliases:
+        template-robo-task-php-executable: '''
+            array{
+                enabled: bool,
+                command: string,
+                envVars?: array<string, null|string>,
+            }
+        '''
+        template-robo-task-process-result: '''
+            array{
+                exitCode: int,
+                stdOutput: string,
+                stdError: string,
+            }
+        '''
+        template-robo-task-composer-json: '''
+            array{
+                name?: string,
+                config?: array{
+                    bin-dir?: string,
+                },
+                autoload?: template-robo-task-composer-json-autoload,
+                autoload-dev?: template-robo-task-composer-json-autoload,
+                scripts?: array<string, string|array<int, string>>,
+                scripts-descriptions?: array<string, string>,
+            }
+        '''
+        template-robo-task-composer-json-autoload: '''
+            array{
+                psr-4?: array<string, string>,
+            }
+        '''
+        template-robo-task-one-time-env-vars: '''
+            array{
+                vendorMachine: null|string,
+                vendorNamespace: null|string,
+                nameMachine: null|string,
+                nameNamespace: null|string,
+            }
+        '''

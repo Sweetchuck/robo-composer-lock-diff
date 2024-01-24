@@ -1,0 +1,5 @@
+parameters:
+    typeAliases:
+        template-robo-task-list-task-options: '''
+            array<string, mixed>
+        '''
