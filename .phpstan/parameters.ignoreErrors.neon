@@ -1,71 +1,81 @@
 parameters:
-    ignoreErrors:
-        -
-            message: "#^Call to an undefined method Robo\\\\Collection\\\\CollectionBuilder\\:\\:setAssetNamePrefix\\(\\)\\.$#"
-            count: 1
-            path: ../RoboFile.php
+	ignoreErrors:
+		-
+			message: "#^Call to an undefined method Robo\\\\Collection\\\\CollectionBuilder\\:\\:setAssetNamePrefix\\(\\)\\.$#"
+			count: 1
+			path: ../RoboFile.php
 
-        -
-            message: "#^Call to an undefined method Robo\\\\Collection\\\\CollectionBuilder\\|Robo\\\\Collection\\\\TaskForEach\\:\\:iterationMessage\\(\\)\\.$#"
-            count: 1
-            path: ../RoboFile.php
+		-
+			message: "#^Call to an undefined method Robo\\\\Collection\\\\CollectionBuilder\\|Robo\\\\Collection\\\\TaskForEach\\:\\:iterationMessage\\(\\)\\.$#"
+			count: 1
+			path: ../RoboFile.php
 
-        -
-            message: "#^Call to an undefined method Robo\\\\Collection\\\\CollectionBuilder\\|Robo\\\\Task\\\\Filesystem\\\\FilesystemStack\\:\\:mkdir\\(\\)\\.$#"
-            count: 4
-            path: ../RoboFile.php
+		-
+			message: "#^Call to an undefined method Robo\\\\Collection\\\\CollectionBuilder\\|Robo\\\\Task\\\\Filesystem\\\\FilesystemStack\\:\\:mkdir\\(\\)\\.$#"
+			count: 4
+			path: ../RoboFile.php
 
-        -
-            message: "#^Call to an undefined method Robo\\\\Collection\\\\CollectionBuilder\\|Sweetchuck\\\\Robo\\\\Git\\\\Task\\\\GitListStagedFilesTask\\:\\:setPaths\\(\\)\\.$#"
-            count: 2
-            path: ../RoboFile.php
+		-
+			message: "#^Call to an undefined method Robo\\\\Collection\\\\CollectionBuilder\\|Sweetchuck\\\\Robo\\\\Git\\\\Task\\\\GitListStagedFilesTask\\:\\:setPaths\\(\\)\\.$#"
+			count: 2
+			path: ../RoboFile.php
 
-        -
-            message: "#^Call to an undefined method Robo\\\\Collection\\\\CollectionBuilder\\|Sweetchuck\\\\Robo\\\\Git\\\\Task\\\\GitReadStagedFilesTask\\:\\:setCommandOnly\\(\\)\\.$#"
-            count: 2
-            path: ../RoboFile.php
+		-
+			message: "#^Call to an undefined method Robo\\\\Collection\\\\CollectionBuilder\\|Sweetchuck\\\\Robo\\\\Git\\\\Task\\\\GitReadStagedFilesTask\\:\\:setCommandOnly\\(\\)\\.$#"
+			count: 2
+			path: ../RoboFile.php
 
-        -
-            message: "#^Call to an undefined method Robo\\\\Collection\\\\CollectionBuilder\\|Sweetchuck\\\\Robo\\\\Phpstan\\\\Task\\\\AnalyzeTask\\:\\:setNoProgress\\(\\)\\.$#"
-            count: 1
-            path: ../RoboFile.php
+		-
+			message: "#^Call to an undefined method Robo\\\\Collection\\\\CollectionBuilder\\|Sweetchuck\\\\Robo\\\\Phpstan\\\\Task\\\\AnalyzeTask\\:\\:setNoProgress\\(\\)\\.$#"
+			count: 1
+			path: ../RoboFile.php
 
-        -
-            message: "#^Call to an undefined method Robo\\\\Collection\\\\TaskForEach\\:\\:deferTaskConfiguration\\(\\)\\.$#"
-            count: 1
-            path: ../RoboFile.php
+		-
+			message: "#^Call to an undefined method Robo\\\\Collection\\\\TaskForEach\\:\\:deferTaskConfiguration\\(\\)\\.$#"
+			count: 1
+			path: ../RoboFile.php
 
-        -
-            message: "#^Call to an undefined method Sweetchuck\\\\Robo\\\\Git\\\\Task\\\\GitReadStagedFilesTask\\:\\:deferTaskConfiguration\\(\\)\\.$#"
-            count: 2
-            path: ../RoboFile.php
+		-
+			message: "#^Call to an undefined method Sweetchuck\\\\Robo\\\\Git\\\\Task\\\\GitReadStagedFilesTask\\:\\:deferTaskConfiguration\\(\\)\\.$#"
+			count: 2
+			path: ../RoboFile.php
 
-        -
-            message: "#^Method Sweetchuck\\\\Robo\\\\TemplateTask\\\\Tests\\\\Helper\\\\Dummy\\\\DummyTaskBuilder\\:\\:taskTemplateList\\(\\) should return Robo\\\\Collection\\\\CollectionBuilder but returns Sweetchuck\\\\Robo\\\\TemplateTask\\\\Task\\\\ListTask\\.$#"
-            count: 1
-            path: ../tests/_support/Helper/Dummy/DummyTaskBuilder.php
+		-
+			message: "#^Method Sweetchuck\\\\Robo\\\\ComposerLockDiff\\\\Tests\\\\Helper\\\\Dummy\\\\DummyTaskBuilder\\:\\:taskComposerLockDiffReport\\(\\) should return Robo\\\\Collection\\\\CollectionBuilder but returns Sweetchuck\\\\Robo\\\\ComposerLockDiff\\\\Task\\\\ReportTask\\.$#"
+			count: 1
+			path: ../tests/_support/Helper/Dummy/DummyTaskBuilder.php
 
-        -
-            message: "#^PHPDoc tag @return with type Robo\\\\Collection\\\\CollectionBuilder\\|Sweetchuck\\\\Robo\\\\TemplateTask\\\\Task\\\\ListTask is not subtype of native type Robo\\\\Collection\\\\CollectionBuilder\\.$#"
-            count: 1
-            path: ../tests/_support/Helper/Dummy/DummyTaskBuilder.php
+		-
+			message: "#^Method Sweetchuck\\\\Robo\\\\ComposerLockDiff\\\\Tests\\\\Helper\\\\Dummy\\\\DummyTaskBuilder\\:\\:taskComposerLockDiffer\\(\\) should return Robo\\\\Collection\\\\CollectionBuilder but returns Sweetchuck\\\\Robo\\\\ComposerLockDiff\\\\Task\\\\LockDifferTask\\.$#"
+			count: 1
+			path: ../tests/_support/Helper/Dummy/DummyTaskBuilder.php
 
-        -
-            message: "#^Call to an undefined method Robo\\\\Collection\\\\CollectionBuilder\\:\\:setRaw\\(\\)\\.$#"
-            count: 1
-            path: ../tests/_support/Helper/RoboFiles/TemplateRoboFile.php
+		-
+			message: "#^PHPDoc tag @return with type Robo\\\\Collection\\\\CollectionBuilder\\|Sweetchuck\\\\Robo\\\\ComposerLockDiff\\\\Task\\\\LockDifferTask is not subtype of native type Robo\\\\Collection\\\\CollectionBuilder\\.$#"
+			count: 1
+			path: ../tests/_support/Helper/Dummy/DummyTaskBuilder.php
 
-        -
-            message: "#^Method Sweetchuck\\\\Robo\\\\TemplateTask\\\\Tests\\\\Helper\\\\RoboFiles\\\\TemplateRoboFile\\:\\:taskTemplateList\\(\\) should return Robo\\\\Collection\\\\CollectionBuilder but returns Sweetchuck\\\\Robo\\\\TemplateTask\\\\Task\\\\ListTask\\.$#"
-            count: 1
-            path: ../tests/_support/Helper/RoboFiles/TemplateRoboFile.php
+		-
+			message: "#^PHPDoc tag @return with type Robo\\\\Collection\\\\CollectionBuilder\\|Sweetchuck\\\\Robo\\\\ComposerLockDiff\\\\Task\\\\ReportTask is not subtype of native type Robo\\\\Collection\\\\CollectionBuilder\\.$#"
+			count: 1
+			path: ../tests/_support/Helper/Dummy/DummyTaskBuilder.php
 
-        -
-            message: "#^PHPDoc tag @return with type Robo\\\\Collection\\\\CollectionBuilder\\|Sweetchuck\\\\Robo\\\\TemplateTask\\\\Task\\\\ListTask is not subtype of native type Robo\\\\Collection\\\\CollectionBuilder\\.$#"
-            count: 1
-            path: ../tests/_support/Helper/RoboFiles/TemplateRoboFile.php
+		-
+			message: "#^Method Sweetchuck\\\\Robo\\\\ComposerLockDiff\\\\Tests\\\\Helper\\\\RoboFiles\\\\ComposerLockDiffRoboFile\\:\\:taskComposerLockDiffReport\\(\\) should return Robo\\\\Collection\\\\CollectionBuilder but returns Sweetchuck\\\\Robo\\\\ComposerLockDiff\\\\Task\\\\ReportTask\\.$#"
+			count: 1
+			path: ../tests/_support/Helper/RoboFiles/ComposerLockDiffRoboFile.php
 
-        -
-            message: "#^Parameter \\#1 \\$commandFile of class Robo\\\\Collection\\\\CollectionBuilder constructor expects Robo\\\\Tasks, null given\\.$#"
-            count: 1
-            path: ../tests/unit/Task/CliTaskTestBase.php
+		-
+			message: "#^Method Sweetchuck\\\\Robo\\\\ComposerLockDiff\\\\Tests\\\\Helper\\\\RoboFiles\\\\ComposerLockDiffRoboFile\\:\\:taskComposerLockDiffer\\(\\) should return Robo\\\\Collection\\\\CollectionBuilder but returns Sweetchuck\\\\Robo\\\\ComposerLockDiff\\\\Task\\\\LockDifferTask\\.$#"
+			count: 1
+			path: ../tests/_support/Helper/RoboFiles/ComposerLockDiffRoboFile.php
+
+		-
+			message: "#^PHPDoc tag @return with type Robo\\\\Collection\\\\CollectionBuilder\\|Sweetchuck\\\\Robo\\\\ComposerLockDiff\\\\Task\\\\LockDifferTask is not subtype of native type Robo\\\\Collection\\\\CollectionBuilder\\.$#"
+			count: 1
+			path: ../tests/_support/Helper/RoboFiles/ComposerLockDiffRoboFile.php
+
+		-
+			message: "#^PHPDoc tag @return with type Robo\\\\Collection\\\\CollectionBuilder\\|Sweetchuck\\\\Robo\\\\ComposerLockDiff\\\\Task\\\\ReportTask is not subtype of native type Robo\\\\Collection\\\\CollectionBuilder\\.$#"
+			count: 1
+			path: ../tests/_support/Helper/RoboFiles/ComposerLockDiffRoboFile.php

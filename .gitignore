@@ -1,12 +1,18 @@
+/.cache/
+/.composer-suite/
 
 /vendor/
 
 /tests/_log/
+/tests/_output/
 /tests/_support/_generated/
 /tests/*.suite.yml
 /codeception.yml
 
 /.git-hooks.local
+
+/phpcs.xml
+/phpstan.neon
 
 /robo.yml
 /RoboFileAcceptance.php

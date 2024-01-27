@@ -21,7 +21,8 @@ class DummyTaskBuilder implements BuilderAwareInterface, ContainerAwareInterface
     use StateAwareTrait;
     use TaskIO;
     use ComposerLockDiffTaskLoader {
-        taskComposerLockDiffList as public;
+        taskComposerLockDiffer as public;
+        taskComposerLockDiffReport as public;
     }
 
     /**

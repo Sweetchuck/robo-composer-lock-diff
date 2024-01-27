@@ -1,5 +1,19 @@
 parameters:
     typeAliases:
-        template-robo-task-list-task-options: '''
-            array<string, mixed>
+        robo-composer-lock-diff-lockdiffer-task-options: '''
+            array{
+                assetNamePrefix?: string,
+                lockDiffer?: null|\Sweetchuck\ComposerLockDiff\LockDiffer,
+                leftLock?: null|composer-lock-diff-lock,
+                rightLock?: null|composer-lock-diff-lock,
+                leftJson?: null|composer-lock-diff-json,
+                rightJson?: null|composer-lock-diff-json,
+            }
+        '''
+        robo-composer-lock-diff-report-task-options: '''
+            array{
+                assetNamePrefix?: string,
+                reporter?: \Sweetchuck\ComposerLockDiff\ReporterInterface,
+                entries?: array<\Sweetchuck\ComposerLockDiff\LockDiffEntry>
+            }
         '''

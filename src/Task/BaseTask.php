@@ -62,6 +62,20 @@ abstract class BaseTask extends RoboBaseTask implements ContainerAwareInterface,
         return $this;
     }
 
+    protected int $taskResultCode = 0;
+
+    protected function getTaskResultCode(): int
+    {
+        return $this->taskResultCode;
+    }
+
+    protected string $taskResultMessage = '';
+
+    protected function getTaskResultMessage(): string
+    {
+        return $this->taskResultMessage;
+    }
+
     /**
      * {@inheritdoc}
      *
@@ -79,6 +93,9 @@ abstract class BaseTask extends RoboBaseTask implements ContainerAwareInterface,
 
     protected function runInit(): static
     {
+        $this->taskResultCode = 0;
+        $this->taskResultMessage = '';
+
         return $this;
     }
 
@@ -107,16 +124,6 @@ abstract class BaseTask extends RoboBaseTask implements ContainerAwareInterface,
             $this->getTaskResultMessage(),
             $this->getAssetsWithPrefixedNames()
         );
-    }
-
-    protected function getTaskResultCode(): int
-    {
-        return 0;
-    }
-
-    protected function getTaskResultMessage(): string
-    {
-        return '';
     }
 
     /**
